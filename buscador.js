@@ -22,7 +22,7 @@ class Search {
     watch(input, list, search) {
         input.addEventListener('keyup', () => {
             search.innerHTML = '';
-            let value = input.value,
+            let value = input.value.toLowerCase(),
                 listT = list.length,
                 existe = 0;
 
